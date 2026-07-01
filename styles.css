@@ -335,6 +335,31 @@ body {
   display: none;
 }
 
+.live-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 12px;
+  padding: 9px 16px;
+  border: 1px solid var(--accent);
+  border-radius: 8px;
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.15s, color 0.15s;
+}
+
+.live-link:hover,
+.live-link:focus-visible {
+  background: var(--accent);
+  color: #fff;
+}
+
+.live-link:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
 .copy-feedback {
   position: absolute;
   top: -26px;
